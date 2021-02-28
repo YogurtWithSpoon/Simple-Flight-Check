@@ -1,0 +1,95 @@
+.flight_card {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 1.37rem;
+  padding-top: 1.25rem;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+  letter-spacing: -0.41px;
+}
+/* icon styles */
+.round_icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background: var(--roundicon-bg-color);
+  margin-right: 1.5rem;
+}
+
+.plane_icon {
+  fill: var(--accent-color);
+}
+
+/* right card side */
+
+.flight_card_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flight_card_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flight_card_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flight_card_direction {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.37rem;
+  color: var(--main-text-color);
+}
+
+.flight_card_options {
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1.37rem;
+  color: var(--secondary-text-color);
+}
+
+/* left side card */
+
+.flight_card_like {
+  background: none;
+  margin-right: 9px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.flight_card_price {
+  font-size: 0.68rem;
+  line-height: 1.37rem;
+  color: var(--secondary-text-color);
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.flight_card_price_number {
+  font-size: 1.05rem;
+  line-height: 1.37rem;
+  color: var(--main-text-color);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+/* Like button */
+
+.like_icon {
+  stroke: var(--secondary-text-color);
+}
+
+.like_icon_active {
+  fill: var(--like-color);
+  stroke: var(--like-color);
+}

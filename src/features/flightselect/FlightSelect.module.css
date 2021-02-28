@@ -1,0 +1,46 @@
+.flight_favorite {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: var(--main-text-color);
+}
+
+.flight_favorite_number {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.flight_select_list {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+/* Scroll bar styles */
+
+.trackY {
+  background: #e7e7e7 !important;
+  width: 2px !important;
+  height: 100% !important;
+  top: -5px !important;
+  display: block !important;
+}
+
+.trackY > div {
+  background: var(--accent-color) !important;
+  height: 96px !important;
+}
+
+.MyAwesomeScrollbarsWrapper {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* no flight in list  */
+.noflight {
+  display: block;
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--main-text-color);
+  font-weight: 500;
+}

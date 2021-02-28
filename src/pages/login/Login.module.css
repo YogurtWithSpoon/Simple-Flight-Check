@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+/* background img */
+.bg_image {
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background: url("../../images/login_bg.png") no-repeat center center fixed;
+  width: 100vw;
+  filter: blur(5px);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* form section */
+.loginform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 410px;
+  height: 338px;
+  width: 60%;
+  padding: 2rem;
+  background: var(--card-bg-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.loginform_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 1.2rem;
+}
+
+.loginform_input {
+  border: 1px solid;
+  border-color: #c9cacc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 0.7rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  height: 2.3rem;
+  line-height: 1.2rem;
+  font-weight: 300;
+  width: 100%;
+}
+
+.loginform_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 5rem;
+}
+
+.loginform_error {
+  color: var(--error-color);
+  border-color: var(--error-color);
+}
+.loginform_button {
+  align-self: flex-end;
+}
+
+.loginform_section > label {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.button {
+  width: 116px;
+  height: 34px;
+  font-size: 1rem;
+  outline: none;
+  color: var(--button-text-color);
+  background: linear-gradient(104.34deg, #5362be -15.34%, #4ad5ff 145.95%);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+/* button styles */
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(104.34deg, #3c4cad -15.34%, #00c3ff 145.95%);
+  box-shadow: 0px 0px 4px #99a0a3;
+}
+
+.button:disabled {
+  cursor: pointer;
+  background: linear-gradient(104.34deg, #a3a3a3 -15.34%, #5e5e5e 145.95%);
+}
+
+.button:active {
+  cursor: pointer;
+  background: linear-gradient(104.34deg, #5362be -15.34%, #4ad5ff 145.95%);
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .loginform {
+    width: 95%;
+    max-width: 95%;
+    height: 45%;
+  }
+}
